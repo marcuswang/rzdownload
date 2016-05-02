@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://yunmei.cloudapi.gmw.cn/gmym_download/ -->
+<html lang="en"><!--<![endif]--><head _wxhkphogpkobbkjccgfifhfjlahnoocnan_="shake_1.0"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clash Of Monsters——热战联盟</title>
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="热战联盟">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<!-- CSS Global Compulsory-->
+<link rel="stylesheet" href="http://static.pgyer.com/static-20150917/assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://static.pgyer.com/static-20150917/assets/css/style.css" />
+<link rel="stylesheet" href="http://static.pgyer.com/static-20150917/assets/plugins/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--=== Breadcrumbs ===-->
+<div class="row-fluid breadcrumbs margin-bottom-20">
+  <div class="container">
+    <h1 class="pull-left">Clash Of Monsters——热战联盟</h1>
+    <ul class="pull-right breadcrumb" style="padding-left:0">
+      <li>版本：<span id="version">2.0.11</span></li>
+    </ul>
+  </div>
+  <!--/container--> 
+</div>
+<!--/breadcrumbs--> 
+<!--=== End Breadcrumbs ===--> 
+<!-- <div class="container">
+	<div class="alert alert-info" id="ios_tip" style="display:none">
+		<strong>温馨提示</strong>
+		<p>手机为iOS9系统的用户，打开应用后请到苹果“设置-通用-描述文件”界面对文件选择“信任”</p>
+	</div>
+</div> -->
+<!--=== Content Part ===-->
+<div class="container content" style="padding-top:20px">
+  <div class="view row">
+    <div class="span12" style="text-align:center;">
+    	<img src="./120.PNG" class="appicon">
+    </div>
+  </div>
+  <div id="" class="view row" style="margin-top:30px;">
+    <div class="span12 margin-bottom-20" style="text-align:center;">
+      <div class="spinner">
+        <a href="https://play.google.com/store/apps/details?id=com.fourgames.rz" class="btn-u btn-u-lg" style="background:#56bc94" id="link"> <i class="fa fa-download"></i> 点击安装</a> </div>
+    </div>
+    <div class="span12" style="text-align:center;"> <span class="label label-success" id="tip">适用于Android设备</span> </div>
+  </div>
+</div>
+<!--/container--> 
+<!--=== End Content Part ===--> 
+
+<!--=== Copyright ===-->
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8  col-xs-12 col-md-6 col-sm-6 text-left"> 本页面由 <a href="http://monsters.4games.com/default.html">4games</a> 提供</div>
+    </div>
+    <!--/row-fluid--> 
+  </div>
+  <!--/container--> 
+</div>
+<!--=== End Copyright ===-->
+<script type="text/javascript">
+	var AppInfo = {	
+		android: {	
+			version: '2.0.11',
+			size: '80.08 MB',
+			tip: '适用于Android设备',
+			link: 'https://play.google.com/store/apps/details?id=com.fourgames.rz'
+		},
+		ios: {	
+			version: '2.0.11',
+			size: '7.6 MB',
+			tip: '适用于iOS设备',
+			link: 'https://itunes.apple.com/my/app/id1076477792'}
+	}
+
+	var getId = function(id){	
+		return document.getElementById(id)
+	}
+
+	var render = function(){	
+
+	}	
+
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	var isWeixin = !!u.match(/MicroMessenger/i);
+
+	var data = AppInfo[isiOS?'ios':'android']
+
+	getId('version').innerHTML = data.version
+	getId('tip').innerHTML = data.tip
+	getId('link').href = data.link
+
+
+
+	getId('link').onclick = function(){	
+		if(isWeixin){	
+			alert('请点击微信右上角按钮，然后在弹出的菜单中选择其他浏览器打开')
+			return false
+		}
+	}
+
+</script>
+
+
+
+</body></html>
